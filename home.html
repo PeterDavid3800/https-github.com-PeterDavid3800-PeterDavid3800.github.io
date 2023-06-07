@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      background-color: blueviolet;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      flex: 0 0 auto;
+    }
+
+    main {
+      flex: 1 0 auto;
+      display: flex;
+    }
+
+    footer {
+      flex: 0 0 auto;
+    }
+
+    main img {
+      width: 300px;
+      height: 300px;
+      float: right;
+      border-radius: 50%;
+      transform-origin: center;
+      animation: rotate 30s infinite linear;
+    }
+    main video {
+      width: 300px;
+      height: 300px;
+      float: left;
+    }
+
+    main p {
+      margin-right: 20px;
+      opacity: 0;
+      animation: fade-in 2s forwards;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Peter David Aringo</h1>
+    <img src="Profile.jpg" alt="information">
+    <h1>Personal Statement:</h1>
+    <div class="card">
+      <p>
+        I am passionate about diverse activities, collaborating with decision-makers, and driving positive outcomes. I excel in creating compelling presentations and building productive relationships, contributing to organizational growth. I believe in continuous learning, staying updated with industry trends, and providing fresh perspectives. With a strong work ethic and adaptability, I am an ideal candidate for available positions, eager to make a meaningful impact and embrace continuous growth.
+      </p>
+      <p>Watch how Peter wants to transform the world:</p>
+    <video src="The Programmer.mp4" controls>
+    </video>
+  </main>
+  
+  <footer>
+    PHONE:
+    +254735060279
+    
+    EMAIL:
+    Peter.aringo@strathmore.edu
+    davidpeter487@gmail.com
+  </footer>
+</body>
+</html>
